@@ -7,7 +7,8 @@
   },
   "homepage": "https://next-auth-example.vercel.app",
   "scripts": {
-    "dev": "next",
+    "dev": "AUTH_URL=\"http://web.localhost:3000\" next",
+    "dev:admin": "AUTH_URL=\"http://admin.localhost:3000\" next",
     "build": "next build",
     "start": "next start"
   },
@@ -18,8 +19,10 @@
     "Lluis Agusti <hi@llu.lu>"
   ],
   "dependencies": {
-    "next": "latest",
-    "next-auth": "latest",
+    "@auth/mongodb-adapter": "^2.0.1",
+    "mongodb": "^6.1.0",
+    "next": "^13.5.4",
+    "next-auth": "0.0.0-manual.ffd05533",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
