@@ -4,6 +4,7 @@ import GitHub from "next-auth/providers/github"
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import mongoClient from "@/lib/db/mongo-client";
 
+// Build
 // Read more at: https://next-auth.js.org/getting-started/typescript#module-augmentation
 declare module 'next-auth' {
   interface Session {
